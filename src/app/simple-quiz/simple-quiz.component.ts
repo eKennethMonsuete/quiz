@@ -1,3 +1,4 @@
+import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -10,7 +11,14 @@ import { CardModule } from 'primeng/card';
 
 @Component({
   selector: 'app-simple-quiz',
-  imports: [ButtonModule, ListboxModule, FormsModule, CommonModule, CardModule],
+  imports: [
+    ButtonModule,
+    ListboxModule,
+    FormsModule,
+    CommonModule,
+    CardModule,
+    HttpClientModule,
+  ],
   templateUrl: './simple-quiz.component.html',
   styleUrl: './simple-quiz.component.scss',
   providers: [QuizService],
