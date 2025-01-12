@@ -98,6 +98,16 @@ export class SimpleQuizComponent implements OnInit {
     }
   }
 
+  lastQuestion(): void {
+    // this.selectedAnswerIndex = null;
+    // this.isAnswerChecked = false;
+    if (this.currentQuestionIndex < this.questions.length - 1) {
+      this.currentQuestionIndex--;
+    } else {
+      this.showResults = true;
+    }
+  }
+
   // Reiniciar o quiz
   restartQuiz(): void {
     this.currentQuestionIndex = 0;

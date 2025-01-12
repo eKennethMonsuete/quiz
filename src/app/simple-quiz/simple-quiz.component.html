@@ -50,6 +50,13 @@
         {{ getExplanation() }}
       </p>
 
+      <p-button
+        label="Questão Anterior"
+        [rounded]="true"
+        [disabled]="currentQuestionIndex === 0"
+        (click)="lastQuestion()"
+      />
+
       <!-- Botão para ir à próxima questão -->
       <p-button
         [rounded]="true"
