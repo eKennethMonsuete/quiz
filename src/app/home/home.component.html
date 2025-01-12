@@ -1,1 +1,23 @@
-<p>home works!</p>
+<div class="card flex justify-center">
+  <p-panel header="QUIZ">
+    <div class="mb-4 p-8">
+      <p-card header="ALGUM TEMA">
+        <!-- Adicionado gap-4 no div principal dos botões -->
+        <div class="card flex flex-wrap justify-center gap-8">
+          <p-button label="Primary" />
+          <p-button
+            label="IR PARA QUESTÕES"
+            severity="secondary"
+            routerLink="/quiz"
+          />
+          <p-button label="Success" severity="success" />
+          <p-button label="Info" severity="info" />
+          <p-button label="Warn" severity="warn" />
+          <p-button label="Help" severity="help" />
+          <p-button label="Danger" severity="danger" />
+          <p-button label="Contrast" severity="contrast" />
+        </div>
+      </p-card>
+    </div>
+  </p-panel>
+</div>
